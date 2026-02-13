@@ -801,4 +801,163 @@ int pop() {
 ## 📌 NAND and NOR Gates
 
 ### NAND Gate = NOT + AND
-- **Output = 0 only when ALL in
+- **Output = 0 only when ALL inputs are 1**
+- Called **Universal Gate** (can create any other gate)
+
+**Truth Table — NAND:**
+| A | B | Output |
+|---|---|--------|
+| 0 | 0 | **1** |
+| 0 | 1 | **1** |
+| 1 | 0 | **1** |
+| 1 | 1 | **0** |
+
+### NOR Gate = NOT + OR
+- **Output = 1 only when ALL inputs are 0**
+- Also called **Universal Gate**
+
+**Truth Table — NOR:**
+| A | B | Output |
+|---|---|--------|
+| 0 | 0 | **1** |
+| 0 | 1 | **0** |
+| 1 | 0 | **0** |
+| 1 | 1 | **0** |
+
+> **NAND and NOR are called Universal Gates because any other gate can be built using only NAND (or only NOR) gates.**
+
+---
+
+## ⭐ 5-Mark Answer: Explain Boolean Algebra with gates and truth tables
+
+**Boolean Algebra** is a system of algebra that works with binary values — **1 (TRUE)** and **0 (FALSE)**. It was developed by mathematician **George Boole** and forms the mathematical foundation of digital computers.
+
+**Three Basic Operations:**
+
+1. **AND Operation (·):** Output is 1 only when all inputs are 1. Used in multiplication logic.
+   - 0·0=0, 0·1=0, 1·0=0, 1·1=**1**
+
+2. **OR Operation (+):** Output is 1 when at least one input is 1.
+   - 0+0=0, 0+1=**1**, 1+0=**1**, 1+1=**1**
+
+3. **NOT Operation ('):** Inverts the input.
+   - NOT 0 = **1**, NOT 1 = **0**
+
+**Important Laws:**
+- **Identity Law:** A+0=A, A·1=A
+- **Complement Law:** A+A'=1, A·A'=0
+- **De Morgan's Theorem:** (A+B)' = A'·B' and (A·B)' = A'+B'
+
+**De Morgan's Theorem** is very important because it allows us to convert between AND/OR operations with negation.
+
+**Universal Gates:** NAND and NOR are called Universal Gates because any Boolean function can be implemented using only NAND gates or only NOR gates. This reduces manufacturing cost of circuits.
+
+---
+
+---
+
+# 6. MCQ Quick Revision
+
+## SQL MCQs
+- DDL stands for → **Data Definition Language**
+- DML stands for → **Data Manipulation Language**
+- SELECT command is part of → **DML**
+- `DROP TABLE` is part of → **DDL**
+- `CHAR` vs `VARCHAR` → CHAR is **fixed** length, VARCHAR is **variable** length
+- `DELETE` without WHERE → deletes **all rows** but keeps table
+- `TRUNCATE` vs `DELETE` → TRUNCATE is **DDL**, DELETE is **DML**
+- `LIKE 'A%'` means → starts with **A**
+- `LIKE '%s'` means → ends with **s**
+- Primary key → **uniquely identifies** each row
+
+## Networking MCQs
+- Full form of LAN → **Local Area Network**
+- Full form of WAN → **Wide Area Network**
+- Internet is an example of → **WAN**
+- OSI model has → **7 layers**
+- Topmost layer of OSI → **Application Layer**
+- Bottommost layer of OSI → **Physical Layer**
+- HTTP is used for → **Web browsing**
+- FTP is used for → **File Transfer**
+- SMTP is used for → **Sending emails**
+- Fastest transmission media → **Optical Fiber**
+- Star topology central device → **Hub or Switch**
+- Universal gate → **NAND and NOR**
+
+## C++ MCQs
+- `cin` is used for → **input**
+- `cout` is used for → **output**
+- Array index starts from → **0**
+- `%` operator gives → **remainder**
+- `do-while` executes minimum → **1 time**
+- `const` keyword is used for → **constants**
+- `bool` data type stores → **true or false**
+- `++a` is called → **pre-increment**
+
+## Data Structure MCQs
+- Stack follows → **LIFO**
+- Queue follows → **FIFO**
+- Stack insertion operation → **PUSH**
+- Stack deletion operation → **POP**
+- Queue insertion → **ENQUEUE** at **REAR**
+- Queue deletion → **DEQUEUE** from **FRONT**
+- Stack overflow means → **pushing to a full stack**
+- Stack underflow means → **popping from empty stack**
+- Linked list node contains → **data + address of next node**
+- Array vs Linked List → Array has **fixed** size, Linked list has **dynamic** size
+
+## Boolean MCQs
+- AND gate output is 1 when → **all inputs are 1**
+- OR gate output is 0 when → **all inputs are 0**
+- NOT gate is also called → **Inverter**
+- NAND = NOT + → **AND**
+- NOR = NOT + → **OR**
+- Universal gate → **NAND / NOR**
+- A + A' = → **1**
+- A · A' = → **0**
+- (A+B)' = → **A'·B'** (De Morgan's)
+- (A·B)' = → **A'+B'** (De Morgan's)
+
+---
+
+---
+
+## 📝 Important 2-Mark Definitions (Quick List)
+
+1. **SQL** = Structured Query Language — used to manage relational databases
+2. **DDL** = Commands that define database structure (CREATE, DROP, ALTER)
+3. **DML** = Commands that manipulate data (INSERT, UPDATE, DELETE, SELECT)
+4. **Primary Key** = Column that uniquely identifies each row in a table
+5. **LAN** = Network covering small area like a building or school
+6. **Protocol** = Set of rules governing communication between computers
+7. **Topology** = Physical layout/arrangement of computers in a network
+8. **OSI Model** = 7-layer model describing data transmission across a network
+9. **Stack** = Linear data structure following LIFO principle
+10. **Queue** = Linear data structure following FIFO principle
+11. **Linked List** = Data structure where nodes are connected using pointers
+12. **Boolean Algebra** = Algebra using binary values (0 and 1)
+13. **Universal Gate** = Gate using which all other gates can be made (NAND/NOR)
+14. **Variable** = Named memory location that can store changing values
+15. **Constant** = Named memory location whose value cannot be changed
+16. **Array** = Collection of same-type elements stored in continuous memory
+17. **Keyword** = Reserved words in C++ with predefined meaning
+18. **Loop** = Program construct used to execute code repeatedly
+
+---
+
+## ✅ Last Minute Exam Tips
+
+- **SQL**: Remember DDL vs DML difference — very commonly asked
+- **SELECT with WHERE**: Practice writing queries with conditions
+- **OSI Model**: Remember all 7 layers with trick "**A**ll **P**eople **S**eem **T**o **N**eed **D**ata **P**rocessing"
+- **Stack**: Always write LIFO, PUSH/POP, overflow/underflow
+- **Queue**: Always write FIFO, ENQUEUE at REAR, DEQUEUE from FRONT
+- **Boolean**: Write truth tables completely — all 4 rows
+- **De Morgan's Theorem**: Very important — memorize both formulas
+- **C++ program**: Always include `#include<iostream>` and `using namespace std;`
+
+---
+
+> 📌 **Best of luck for your exam! You've got this! 🎯**
+>
+> *Made for Bihar Board Class 12 Computer Science Exam Revision*
